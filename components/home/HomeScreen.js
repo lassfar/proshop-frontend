@@ -1,8 +1,21 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
+import { useDispatch } from 'react-redux'
+import { fetchProducts } from 'store/actions/productAction'
 import Product from 'components/products/Product'
 
-const HomeScreen = ({ products }) => {
+const HomeScreen = ({ }) => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchProducts());
+    return () => {
+      
+    }
+  }, [dispatch]);
+
+  const products = [];
+
   return (
     <Container>
       <Row>

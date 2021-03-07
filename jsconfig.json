@@ -5,6 +5,7 @@
       "@/config/*": ["config/*"],
       "@/components/*": ["components/*"],
       "@/pages/*": ["pages/*"],
+      "@/store/*": ["store/*"],
       "@/images/*": ["images/*"],
       "@/styles/*": ["styles/*"],
     }
