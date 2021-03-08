@@ -19,7 +19,7 @@ const ProductScreen = ({product}) => {
               <h3>{product.name}</h3>
             </ListGroup.Item>
             <ListGroup.Item>
-              <Rating rating={Math.floor(product.rating)} text={`from ${product.numReviews} reviews`} />
+              <Rating rating={product.rating && parseInt(product.rating)} text={`from ${product.numReviews} reviews`} />
             </ListGroup.Item>
             <ListGroup.Item as="h5">Price $ {product.price}</ListGroup.Item>
             <ListGroup.Item>Description {product.description}</ListGroup.Item>

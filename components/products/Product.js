@@ -15,7 +15,7 @@ const Product = ({product, idx}) => {
       </Card.Title>
 
       <Card.Text>
-        <Rating rating={Math.floor(product.rating)} text={`from ${product.numReviews} reviews`} />
+        <Rating rating={parseInt(product.rating)} text={`from ${product.numReviews} reviews`} />
       </Card.Text>
 
       <Card.Text as="h3">$ { product.price }</Card.Text>
